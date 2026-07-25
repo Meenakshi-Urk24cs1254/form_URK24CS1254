@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Student Registration</h1>
+    <div class="user">
+        <form method="POST" action="/server">
+            <fieldset>
+                <center>
+                    <legend>Personal Information</legend>
+                </center>
+                <lable for="name">Full Name :</lable>
+                <br>
+                <input type="text" id="name">(Maximum 30 character Only)
+                <br>
+                <br>
+                <lable for="reg">Register Number :</lable>
+                <br>
+                <input type="type" id="reg">(use pattern for matching regno URK24CS1001 format)
+                <br>
+                <br>
+                <lable for="email">Email Address :</lable>
+                <br>
+                <input for="email" id="email">
+                <br>
+                <br>
+                <lable for="pass">Password :</lable>
+                <br>
+                <input for="password" id="pass">
+                <br><br>
+                <lable for="date">Date of Birth :</lable>
+                <br>
+                <input type="date" id="date">
+                <br><br>
+                <lable for="age">Age :</lable>
+                <br>
+                <input type="number" id="age">(Manimum 17 & Maximum 21)
+                <br><br>
+                <lable for="time">Preferred Time :</lable>
+                <br>
+                <input type="time" id="time">
+                <br><br>
+
+            </fieldset>
+
+            <div class="academic">
+                <fieldset>
+                    <legend>Academic Performance</legend>
+                    <lable for="dept">Department :</lable>
+                    <br>
+                    <select>
+                        <option>--Select department--</option>
+                        <option>CSE</option>
+                        <option>ECE</option>
+                        <option>EEE</option>
+                        <option>CIVIL</option>
+                        <option>MECH</option>
+                    </select>
+                    <br>
+                    <br>
+                    <lable for="gender">Gender :</lable>
+                    <br>
+                    <input type="radio" id="gender" name="gender">Male
+                    <input type="radio" id="gender" name="gender">Female
+                    <input type="radio" id="gender" name="gender">Others
+                    <br>
+                    <br>
+                    <lable for="skill">Skills:</lable>
+                    <br>
+                    <input type="checkbox" id="skill[]" value="HTML">HTML
+                    <input type="checkbox" id="skill[]" value="CSS">CSS
+                    <input type="checkbox" id="skill[]" value="JavaScripts">Javascripts
+                    <input type="checkbox" id="skill[]" value="Python">Python
+                </fieldset>
+            </div>
+            <div class="addinfo">
+                <fieldset>
+                    Select File: <br><input type="file" name="filename">
+                    <br>
+                    <br>
+                    Portfolio Website: <br><input type="url" name="weburl">
+                    <br> <br>
+                    Favorite Color:<br><input type="color">
+                </fieldset>
+            </div>
+            
+            <br>
+            <button type="submit">Sumbit</button>
+            <button type="reset">Reset</button>
+        </form>
+    </div>
+
+</body>
+</html>
